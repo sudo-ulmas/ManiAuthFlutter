@@ -1,7 +1,7 @@
 mani_uikit
 3.2
-file:///Users/abdullah/.pub-cache/git/mani-uikit-d52f6049f3b871a406b31bba0f3e1207f550ffd2/
-file:///Users/abdullah/.pub-cache/git/mani-uikit-d52f6049f3b871a406b31bba0f3e1207f550ffd2/lib/
+file:///Users/abdullah/.pub-cache/git/ManiUIKit-80f64f590d410f489dfdc6caa214bd6c375a096e/
+file:///Users/abdullah/.pub-cache/git/ManiUIKit-80f64f590d410f489dfdc6caa214bd6c375a096e/lib/
 myid_wrapper
 3.5
 file:///Users/abdullah/.pub-cache/git/myid_wrapper-d8ca60d05def62285749bef4fa5478cae24408c8/
@@ -170,10 +170,6 @@ graphs
 2.18
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/graphs-2.3.1/
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/graphs-2.3.1/lib/
-hive
-2.12
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/hive-2.2.3/
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/hive-2.2.3/lib/
 http
 3.3
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/http-1.2.2/
@@ -186,10 +182,6 @@ http_parser
 2.12
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/http_parser-4.0.2/
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib/
-hydrated_bloc
-2.12
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/hydrated_bloc-9.1.5/
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/hydrated_bloc-9.1.5/lib/
 intl
 3.0
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/intl-0.19.0/
@@ -330,10 +322,6 @@ string_scanner
 2.18
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib/
-synchronized
-3.0
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/synchronized-3.1.0+1/
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/synchronized-3.1.0+1/lib/
 term_glyph
 2.12
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/

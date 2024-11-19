@@ -25,8 +25,8 @@ dependencies:
   mani_uikit:
     # path: ../mani_uikit
     git:
-      url: http://gitlab.yagona.io/mobile/mani-uikit.git
-      ref: develop
+      url: https://github.com/sudo-ulmas/ManiUIKit.git
+      # ref: develop
 
   myid_wrapper:
     git:
