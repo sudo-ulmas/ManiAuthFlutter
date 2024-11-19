@@ -1,0 +1,7 @@
+void main() {
+
+const clientHash =
+    '''MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAstzi2XRq3reo0vtSGp5OHFbSdTcVYh9gl3PUVFVFpLFrNTiCqo46iAxnLd0+edT8e+mD6YlwRTv9rMAE2wRUgG/k9K2WKlKRGbvSqvJrPVR7kj06t4D848o7UqrZVssvl65Y+sGKXNi2hiSr7ihwkpSdN21AzZEC3OjXaFkySdB6u+65g4f7sIB51Mg33WrcdwnEWKa7uOuIA+WA32OGroL7hwi7ygONA9hh8icy/R2IPAWH5f++gHIWjZAdXiwxCdcKEOWtv7FKl4asIg8jzNw0y/nH+ShQo8kBHl38LKiqnXcvTqUimuigIvtE1PElWoUrIRv7C3R73CXs1V7yAwIDAQAB''';
+const clientHashId = '77b991d1-077b-4ebf-9a2c-33d7b9d309d5';
+const clientId = 'yagona_sdk-zL0y2qa4EsMiLRhjRd3iPcraiT78ojMIjGIvOprk';
+}
