@@ -13,7 +13,7 @@ class DioClient {
           BaseOptions(
             baseUrl: _baseUrl,
             headers: {
-              'payment_system_id': paymentSystemId,
+              'payment-system-id': paymentSystemId,
             },
             receiveTimeout: const Duration(seconds: 20),
             connectTimeout: const Duration(seconds: 20),
