@@ -2,10 +2,11 @@ import 'package:dio/dio.dart';
 
 const int gatewayPort = 1065; //1030;
 const String protocol = 'http://';
-const String address = 'merchant.yagona.io';
+const String addressDev = 'merchant.yagona.io:$gatewayPort';
+const String addressProd = 'merchant.mani.uz';
 const String version = 'api/v1';
 const String merchantPrefix = 'merchant/';
-const String _baseUrl = '$protocol$address:$gatewayPort/$version/$merchantPrefix';
+const String _baseUrl = '$protocol$addressProd/$version/$merchantPrefix';
 
 class DioClient {
   DioClient(String paymentSystemId)
