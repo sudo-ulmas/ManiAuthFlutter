@@ -9,10 +9,16 @@ import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
 import 'package:mani_uikit/mani_uikit.dart';
 
 class ManiAuth extends StatefulWidget {
-  const ManiAuth({super.key, required this.locale, required this.paymentSystemId});
+  const ManiAuth({
+    super.key,
+    required this.locale,
+    required this.paymentSystemId,
+    required this.isProd,
+  });
 
   final String paymentSystemId;
   final Locale locale;
+  final bool isProd;
 
   @override
   State<ManiAuth> createState() => _ManiAuthState();
@@ -26,7 +32,7 @@ class _ManiAuthState extends State<ManiAuth> {
     return MultiBlocProvider(
       providers: [
         RepositoryProvider(
-          create: (context) => DioClient(widget.paymentSystemId),
+          create: (context) => DioClient(widget.paymentSystemId, widget.isProd),
         ),
         BlocProvider(
           create: (context) => RegistrationBloc(AuthRepository(context.read())),
@@ -57,34 +63,7 @@ class _ManiAuthState extends State<ManiAuth> {
                 ),
               );
             },
-          )
-          // child: ScreenUtilInit(
-          //   fontSizeResolver: (fontSize, instance) {
-          //     final display = View.of(context).display;
-          //     final screenSize = display.size / display.devicePixelRatio;
-          //     final scaleWidth = screenSize.width / designSize.width;
-          //
-          //     return fontSize * scaleWidth;
-          //   },
-          //   designSize: designSize,
-          //   splitScreenMode: true,
-          //   child: BlocBuilder<ThemeCubit, AppThemeData>(
-          //     builder: (_, themeData) {
-          //       return AppTheme(
-          //         data: themeData,
-          //         child: MaterialApp.router(
-          //           debugShowCheckedModeBanner: false,
-          //           title: 'Mani Auth',
-          //           theme: ThemeData(
-          //             primarySwatch: Colors.blue,
-          //           ),
-          //           routerConfig: AppRouter().goRouter,
-          //         ),
-          //       );
-          //     },
-          //   ),
-          // ),
-          ),
+          )),
     );
   }
 }

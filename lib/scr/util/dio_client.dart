@@ -4,13 +4,13 @@ const String addressDev = 'http://merchant.yagona.io:1065';
 const String addressProd = 'https://merchant.mani.uz';
 const String version = 'api/v1';
 const String merchantPrefix = 'merchant/';
-const String _baseUrl = '$addressProd/$version/$merchantPrefix';
+String _baseUrl(bool isProd) => '${isProd ? addressProd : addressDev}/$version/$merchantPrefix';
 
 class DioClient {
-  DioClient(String paymentSystemId)
+  DioClient(String paymentSystemId, bool isProd)
       : dio = Dio(
           BaseOptions(
-            baseUrl: _baseUrl,
+            baseUrl: _baseUrl(isProd),
             headers: {
               'payment-system-id': paymentSystemId,
             },
