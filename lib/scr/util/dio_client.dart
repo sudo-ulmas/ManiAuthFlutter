@@ -18,6 +18,7 @@ class DioClient {
             },
             receiveTimeout: const Duration(seconds: 20),
             connectTimeout: const Duration(seconds: 20),
+            followRedirects: false,
             validateStatus: (code) => true,
           ),
         )..interceptors.addAll([
