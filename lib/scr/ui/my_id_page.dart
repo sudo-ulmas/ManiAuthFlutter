@@ -6,7 +6,6 @@ import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/my_id_bloc/my_id_bloc.dart';
 import 'package:mani_auth_plugin/scr/model/error_handler.dart';
 import 'package:mani_auth_plugin/scr/model/residence_type.dart';
-import 'package:mani_auth_plugin/scr/repository/auth_repository.dart';
 import 'package:mani_auth_plugin/scr/ui/cancel_button.dart';
 import 'package:mani_auth_plugin/scr/ui/date_picker_field.dart';
 import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
@@ -31,7 +30,7 @@ class _MyIdPageState extends State<MyIdPage> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => MyIdBloc(AuthRepository(context.read()), widget.phoneNumber, widget.accessToken),
+      create: (_) => MyIdBloc(context.read())..add(MyIdEvent.initialize(phoneNumber: widget.phoneNumber, accessToken: widget.accessToken)),
       child: BlocListener<MyIdBloc, MyIdState>(
         listener: (BuildContext context, state) {
           if (state.authStatus == MyIdAuthStatus.error) {
@@ -171,9 +170,7 @@ class MyIdView extends StatelessWidget {
                         disabled: !state.dataIsValid,
                         onTap: () {
                           context.read<MyIdBloc>().add(
-                                MyIdEvent.continueButtonTapped(
-                                  phoneNumber: phoneNumber,
-                                ),
+                                const MyIdEvent.continueButtonTapped(),
                               );
                         },
                       ),

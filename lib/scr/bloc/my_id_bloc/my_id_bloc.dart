@@ -11,17 +11,27 @@ part 'my_id_event.dart';
 part 'my_id_state.dart';
 
 class MyIdBloc extends Bloc<MyIdEvent, MyIdState> {
-  MyIdBloc(this._authRepository, this.phoneNumber, this.accessToken)
-      : super(const MyIdState(passportId: '', dataIsValid: false)) {
+  MyIdBloc(this._authRepository) : super(const MyIdState(passportId: '', dataIsValid: false)) {
     on<_MyIdPassportIdChanged>(_changePassportId);
     on<_MyIdDateOfBirthChanged>(_changeDateOfBirth);
     on<_MyIdContinueButtonTapped>((_, emit) => _openCamera(emit));
     on<_MyIdResidencyChanged>(_changeResidency);
+    on<_MyIdInitialize>(_initialize);
   }
 
   final AuthRepository _authRepository;
-  final String? phoneNumber;
-  final String? accessToken;
+
+  Future<void> _initialize(
+    _MyIdInitialize event,
+    Emitter<MyIdState> emit,
+  ) async {
+    emit(
+      state.copyWith(
+        phoneNumber: event.phoneNumber,
+        accessToken: event.accessToken,
+      ),
+    );
+  }
 
   Future<void> _changeResidency(
     _MyIdResidencyChanged event,
@@ -29,8 +39,7 @@ class MyIdBloc extends Bloc<MyIdEvent, MyIdState> {
   ) async {
     emit(
       state.copyWith(
-        residencyType:
-            event.resident ? ResidenceType.resident : ResidenceType.nonResident,
+        residencyType: event.resident ? ResidenceType.resident : ResidenceType.nonResident,
       ),
     );
   }
@@ -87,13 +96,13 @@ class MyIdBloc extends Bloc<MyIdEvent, MyIdState> {
       // );
       emit(state.copyWith(authStatus: MyIdAuthStatus.loading));
       late int? error;
-      if (phoneNumber != null) {
+      if (state.phoneNumber != null) {
         error = await _authRepository.resetIdentify(
           token: code ?? '',
-          phoneNumber: phoneNumber!,
+          phoneNumber: state.phoneNumber!,
         );
       } else {
-        error = await _authRepository.identify(code ?? '', accessToken);
+        error = await _authRepository.identify(code ?? '', state.accessToken);
       }
       if (error != null) {
         emit(
@@ -123,8 +132,5 @@ class MyIdBloc extends Bloc<MyIdEvent, MyIdState> {
   }
 
   bool isDataValid(DateTime? date, String passport) =>
-      passport.validatePassportId() &&
-      date != null &&
-      date.year < DateTime.now().year - 15 &&
-      date.year > 1900;
+      passport.validatePassportId() && date != null && date.year < DateTime.now().year - 15 && date.year > 1900;
 }

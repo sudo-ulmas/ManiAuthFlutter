@@ -16,5 +16,7 @@ class MyIdState with _$MyIdState {
     @Default('') String error,
     DateTime? dateOfBirth,
     @Default(MyIdAuthStatus.initial) MyIdAuthStatus authStatus,
+       String? phoneNumber,
+    String? accessToken,
   }) = _MyIdState;
 }

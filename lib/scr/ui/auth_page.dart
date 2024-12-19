@@ -6,7 +6,6 @@ import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/login_bloc/login_bloc.dart';
 import 'package:mani_auth_plugin/scr/bloc/registration/registration_bloc.dart';
 import 'package:mani_auth_plugin/scr/model/auth_path.dart';
-import 'package:mani_auth_plugin/scr/repository/auth_repository.dart';
 import 'package:mani_auth_plugin/scr/ui/cancel_button.dart';
 import 'package:mani_auth_plugin/scr/ui/login_form.dart';
 import 'package:mani_auth_plugin/scr/ui/registration_form.dart';
@@ -36,7 +35,7 @@ class _AuthPageState extends State<AuthPage> {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => LoginBloc(AuthRepository(context.read())),
+          create: (context) => LoginBloc(context.read()),
         ),
       ],
       child: BlocConsumer<RegistrationBloc, RegistrationState>(

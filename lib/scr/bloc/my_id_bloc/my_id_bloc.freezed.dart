@@ -21,7 +21,9 @@ mixin _$MyIdEvent {
     required TResult Function(String passportId) passportIdChanged,
     required TResult Function(DateTime? dateOfBirth) dateOfBirthChanged,
     required TResult Function(bool resident) residencyChanged,
-    required TResult Function(String? phoneNumber) continueButtonTapped,
+    required TResult Function() continueButtonTapped,
+    required TResult Function(String? phoneNumber, String? accessToken)
+        initialize,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -29,7 +31,8 @@ mixin _$MyIdEvent {
     TResult? Function(String passportId)? passportIdChanged,
     TResult? Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult? Function(bool resident)? residencyChanged,
-    TResult? Function(String? phoneNumber)? continueButtonTapped,
+    TResult? Function()? continueButtonTapped,
+    TResult? Function(String? phoneNumber, String? accessToken)? initialize,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -37,7 +40,8 @@ mixin _$MyIdEvent {
     TResult Function(String passportId)? passportIdChanged,
     TResult Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult Function(bool resident)? residencyChanged,
-    TResult Function(String? phoneNumber)? continueButtonTapped,
+    TResult Function()? continueButtonTapped,
+    TResult Function(String? phoneNumber, String? accessToken)? initialize,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -48,6 +52,7 @@ mixin _$MyIdEvent {
     required TResult Function(_MyIdResidencyChanged value) residencyChanged,
     required TResult Function(_MyIdContinueButtonTapped value)
         continueButtonTapped,
+    required TResult Function(_MyIdInitialize value) initialize,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -56,6 +61,7 @@ mixin _$MyIdEvent {
     TResult? Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult? Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult? Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult? Function(_MyIdInitialize value)? initialize,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,6 +70,7 @@ mixin _$MyIdEvent {
     TResult Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult Function(_MyIdInitialize value)? initialize,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -156,7 +163,9 @@ class _$MyIdPassportIdChangedImpl implements _MyIdPassportIdChanged {
     required TResult Function(String passportId) passportIdChanged,
     required TResult Function(DateTime? dateOfBirth) dateOfBirthChanged,
     required TResult Function(bool resident) residencyChanged,
-    required TResult Function(String? phoneNumber) continueButtonTapped,
+    required TResult Function() continueButtonTapped,
+    required TResult Function(String? phoneNumber, String? accessToken)
+        initialize,
   }) {
     return passportIdChanged(passportId);
   }
@@ -167,7 +176,8 @@ class _$MyIdPassportIdChangedImpl implements _MyIdPassportIdChanged {
     TResult? Function(String passportId)? passportIdChanged,
     TResult? Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult? Function(bool resident)? residencyChanged,
-    TResult? Function(String? phoneNumber)? continueButtonTapped,
+    TResult? Function()? continueButtonTapped,
+    TResult? Function(String? phoneNumber, String? accessToken)? initialize,
   }) {
     return passportIdChanged?.call(passportId);
   }
@@ -178,7 +188,8 @@ class _$MyIdPassportIdChangedImpl implements _MyIdPassportIdChanged {
     TResult Function(String passportId)? passportIdChanged,
     TResult Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult Function(bool resident)? residencyChanged,
-    TResult Function(String? phoneNumber)? continueButtonTapped,
+    TResult Function()? continueButtonTapped,
+    TResult Function(String? phoneNumber, String? accessToken)? initialize,
     required TResult orElse(),
   }) {
     if (passportIdChanged != null) {
@@ -195,6 +206,7 @@ class _$MyIdPassportIdChangedImpl implements _MyIdPassportIdChanged {
     required TResult Function(_MyIdResidencyChanged value) residencyChanged,
     required TResult Function(_MyIdContinueButtonTapped value)
         continueButtonTapped,
+    required TResult Function(_MyIdInitialize value) initialize,
   }) {
     return passportIdChanged(this);
   }
@@ -206,6 +218,7 @@ class _$MyIdPassportIdChangedImpl implements _MyIdPassportIdChanged {
     TResult? Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult? Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult? Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult? Function(_MyIdInitialize value)? initialize,
   }) {
     return passportIdChanged?.call(this);
   }
@@ -217,6 +230,7 @@ class _$MyIdPassportIdChangedImpl implements _MyIdPassportIdChanged {
     TResult Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult Function(_MyIdInitialize value)? initialize,
     required TResult orElse(),
   }) {
     if (passportIdChanged != null) {
@@ -307,7 +321,9 @@ class _$MyIdDateOfBirthChangedImpl implements _MyIdDateOfBirthChanged {
     required TResult Function(String passportId) passportIdChanged,
     required TResult Function(DateTime? dateOfBirth) dateOfBirthChanged,
     required TResult Function(bool resident) residencyChanged,
-    required TResult Function(String? phoneNumber) continueButtonTapped,
+    required TResult Function() continueButtonTapped,
+    required TResult Function(String? phoneNumber, String? accessToken)
+        initialize,
   }) {
     return dateOfBirthChanged(dateOfBirth);
   }
@@ -318,7 +334,8 @@ class _$MyIdDateOfBirthChangedImpl implements _MyIdDateOfBirthChanged {
     TResult? Function(String passportId)? passportIdChanged,
     TResult? Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult? Function(bool resident)? residencyChanged,
-    TResult? Function(String? phoneNumber)? continueButtonTapped,
+    TResult? Function()? continueButtonTapped,
+    TResult? Function(String? phoneNumber, String? accessToken)? initialize,
   }) {
     return dateOfBirthChanged?.call(dateOfBirth);
   }
@@ -329,7 +346,8 @@ class _$MyIdDateOfBirthChangedImpl implements _MyIdDateOfBirthChanged {
     TResult Function(String passportId)? passportIdChanged,
     TResult Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult Function(bool resident)? residencyChanged,
-    TResult Function(String? phoneNumber)? continueButtonTapped,
+    TResult Function()? continueButtonTapped,
+    TResult Function(String? phoneNumber, String? accessToken)? initialize,
     required TResult orElse(),
   }) {
     if (dateOfBirthChanged != null) {
@@ -346,6 +364,7 @@ class _$MyIdDateOfBirthChangedImpl implements _MyIdDateOfBirthChanged {
     required TResult Function(_MyIdResidencyChanged value) residencyChanged,
     required TResult Function(_MyIdContinueButtonTapped value)
         continueButtonTapped,
+    required TResult Function(_MyIdInitialize value) initialize,
   }) {
     return dateOfBirthChanged(this);
   }
@@ -357,6 +376,7 @@ class _$MyIdDateOfBirthChangedImpl implements _MyIdDateOfBirthChanged {
     TResult? Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult? Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult? Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult? Function(_MyIdInitialize value)? initialize,
   }) {
     return dateOfBirthChanged?.call(this);
   }
@@ -368,6 +388,7 @@ class _$MyIdDateOfBirthChangedImpl implements _MyIdDateOfBirthChanged {
     TResult Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult Function(_MyIdInitialize value)? initialize,
     required TResult orElse(),
   }) {
     if (dateOfBirthChanged != null) {
@@ -457,7 +478,9 @@ class _$MyIdResidencyChangedImpl implements _MyIdResidencyChanged {
     required TResult Function(String passportId) passportIdChanged,
     required TResult Function(DateTime? dateOfBirth) dateOfBirthChanged,
     required TResult Function(bool resident) residencyChanged,
-    required TResult Function(String? phoneNumber) continueButtonTapped,
+    required TResult Function() continueButtonTapped,
+    required TResult Function(String? phoneNumber, String? accessToken)
+        initialize,
   }) {
     return residencyChanged(resident);
   }
@@ -468,7 +491,8 @@ class _$MyIdResidencyChangedImpl implements _MyIdResidencyChanged {
     TResult? Function(String passportId)? passportIdChanged,
     TResult? Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult? Function(bool resident)? residencyChanged,
-    TResult? Function(String? phoneNumber)? continueButtonTapped,
+    TResult? Function()? continueButtonTapped,
+    TResult? Function(String? phoneNumber, String? accessToken)? initialize,
   }) {
     return residencyChanged?.call(resident);
   }
@@ -479,7 +503,8 @@ class _$MyIdResidencyChangedImpl implements _MyIdResidencyChanged {
     TResult Function(String passportId)? passportIdChanged,
     TResult Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult Function(bool resident)? residencyChanged,
-    TResult Function(String? phoneNumber)? continueButtonTapped,
+    TResult Function()? continueButtonTapped,
+    TResult Function(String? phoneNumber, String? accessToken)? initialize,
     required TResult orElse(),
   }) {
     if (residencyChanged != null) {
@@ -496,6 +521,7 @@ class _$MyIdResidencyChangedImpl implements _MyIdResidencyChanged {
     required TResult Function(_MyIdResidencyChanged value) residencyChanged,
     required TResult Function(_MyIdContinueButtonTapped value)
         continueButtonTapped,
+    required TResult Function(_MyIdInitialize value) initialize,
   }) {
     return residencyChanged(this);
   }
@@ -507,6 +533,7 @@ class _$MyIdResidencyChangedImpl implements _MyIdResidencyChanged {
     TResult? Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult? Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult? Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult? Function(_MyIdInitialize value)? initialize,
   }) {
     return residencyChanged?.call(this);
   }
@@ -518,6 +545,7 @@ class _$MyIdResidencyChangedImpl implements _MyIdResidencyChanged {
     TResult Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult Function(_MyIdInitialize value)? initialize,
     required TResult orElse(),
   }) {
     if (residencyChanged != null) {
@@ -543,8 +571,6 @@ abstract class _$$MyIdContinueButtonTappedImplCopyWith<$Res> {
           _$MyIdContinueButtonTappedImpl value,
           $Res Function(_$MyIdContinueButtonTappedImpl) then) =
       __$$MyIdContinueButtonTappedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? phoneNumber});
 }
 
 /// @nodoc
@@ -555,52 +581,27 @@ class __$$MyIdContinueButtonTappedImplCopyWithImpl<$Res>
       _$MyIdContinueButtonTappedImpl _value,
       $Res Function(_$MyIdContinueButtonTappedImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? phoneNumber = freezed,
-  }) {
-    return _then(_$MyIdContinueButtonTappedImpl(
-      phoneNumber: freezed == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
-  const _$MyIdContinueButtonTappedImpl({this.phoneNumber});
-
-  @override
-  final String? phoneNumber;
+  const _$MyIdContinueButtonTappedImpl();
 
   @override
   String toString() {
-    return 'MyIdEvent.continueButtonTapped(phoneNumber: $phoneNumber)';
+    return 'MyIdEvent.continueButtonTapped()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$MyIdContinueButtonTappedImpl &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber));
+            other is _$MyIdContinueButtonTappedImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, phoneNumber);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$MyIdContinueButtonTappedImplCopyWith<_$MyIdContinueButtonTappedImpl>
-      get copyWith => __$$MyIdContinueButtonTappedImplCopyWithImpl<
-          _$MyIdContinueButtonTappedImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
@@ -608,9 +609,11 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
     required TResult Function(String passportId) passportIdChanged,
     required TResult Function(DateTime? dateOfBirth) dateOfBirthChanged,
     required TResult Function(bool resident) residencyChanged,
-    required TResult Function(String? phoneNumber) continueButtonTapped,
+    required TResult Function() continueButtonTapped,
+    required TResult Function(String? phoneNumber, String? accessToken)
+        initialize,
   }) {
-    return continueButtonTapped(phoneNumber);
+    return continueButtonTapped();
   }
 
   @override
@@ -619,9 +622,10 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
     TResult? Function(String passportId)? passportIdChanged,
     TResult? Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult? Function(bool resident)? residencyChanged,
-    TResult? Function(String? phoneNumber)? continueButtonTapped,
+    TResult? Function()? continueButtonTapped,
+    TResult? Function(String? phoneNumber, String? accessToken)? initialize,
   }) {
-    return continueButtonTapped?.call(phoneNumber);
+    return continueButtonTapped?.call();
   }
 
   @override
@@ -630,11 +634,12 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
     TResult Function(String passportId)? passportIdChanged,
     TResult Function(DateTime? dateOfBirth)? dateOfBirthChanged,
     TResult Function(bool resident)? residencyChanged,
-    TResult Function(String? phoneNumber)? continueButtonTapped,
+    TResult Function()? continueButtonTapped,
+    TResult Function(String? phoneNumber, String? accessToken)? initialize,
     required TResult orElse(),
   }) {
     if (continueButtonTapped != null) {
-      return continueButtonTapped(phoneNumber);
+      return continueButtonTapped();
     }
     return orElse();
   }
@@ -647,6 +652,7 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
     required TResult Function(_MyIdResidencyChanged value) residencyChanged,
     required TResult Function(_MyIdContinueButtonTapped value)
         continueButtonTapped,
+    required TResult Function(_MyIdInitialize value) initialize,
   }) {
     return continueButtonTapped(this);
   }
@@ -658,6 +664,7 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
     TResult? Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult? Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult? Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult? Function(_MyIdInitialize value)? initialize,
   }) {
     return continueButtonTapped?.call(this);
   }
@@ -669,6 +676,7 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
     TResult Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
     TResult Function(_MyIdResidencyChanged value)? residencyChanged,
     TResult Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult Function(_MyIdInitialize value)? initialize,
     required TResult orElse(),
   }) {
     if (continueButtonTapped != null) {
@@ -679,13 +687,174 @@ class _$MyIdContinueButtonTappedImpl implements _MyIdContinueButtonTapped {
 }
 
 abstract class _MyIdContinueButtonTapped implements MyIdEvent {
-  const factory _MyIdContinueButtonTapped({final String? phoneNumber}) =
-      _$MyIdContinueButtonTappedImpl;
+  const factory _MyIdContinueButtonTapped() = _$MyIdContinueButtonTappedImpl;
+}
+
+/// @nodoc
+abstract class _$$MyIdInitializeImplCopyWith<$Res> {
+  factory _$$MyIdInitializeImplCopyWith(_$MyIdInitializeImpl value,
+          $Res Function(_$MyIdInitializeImpl) then) =
+      __$$MyIdInitializeImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String? phoneNumber, String? accessToken});
+}
+
+/// @nodoc
+class __$$MyIdInitializeImplCopyWithImpl<$Res>
+    extends _$MyIdEventCopyWithImpl<$Res, _$MyIdInitializeImpl>
+    implements _$$MyIdInitializeImplCopyWith<$Res> {
+  __$$MyIdInitializeImplCopyWithImpl(
+      _$MyIdInitializeImpl _value, $Res Function(_$MyIdInitializeImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? phoneNumber = freezed,
+    Object? accessToken = freezed,
+  }) {
+    return _then(_$MyIdInitializeImpl(
+      phoneNumber: freezed == phoneNumber
+          ? _value.phoneNumber
+          : phoneNumber // ignore: cast_nullable_to_non_nullable
+              as String?,
+      accessToken: freezed == accessToken
+          ? _value.accessToken
+          : accessToken // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$MyIdInitializeImpl implements _MyIdInitialize {
+  const _$MyIdInitializeImpl({this.phoneNumber, this.accessToken});
+
+  @override
+  final String? phoneNumber;
+  @override
+  final String? accessToken;
+
+  @override
+  String toString() {
+    return 'MyIdEvent.initialize(phoneNumber: $phoneNumber, accessToken: $accessToken)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$MyIdInitializeImpl &&
+            (identical(other.phoneNumber, phoneNumber) ||
+                other.phoneNumber == phoneNumber) &&
+            (identical(other.accessToken, accessToken) ||
+                other.accessToken == accessToken));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, phoneNumber, accessToken);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MyIdInitializeImplCopyWith<_$MyIdInitializeImpl> get copyWith =>
+      __$$MyIdInitializeImplCopyWithImpl<_$MyIdInitializeImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String passportId) passportIdChanged,
+    required TResult Function(DateTime? dateOfBirth) dateOfBirthChanged,
+    required TResult Function(bool resident) residencyChanged,
+    required TResult Function() continueButtonTapped,
+    required TResult Function(String? phoneNumber, String? accessToken)
+        initialize,
+  }) {
+    return initialize(phoneNumber, accessToken);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String passportId)? passportIdChanged,
+    TResult? Function(DateTime? dateOfBirth)? dateOfBirthChanged,
+    TResult? Function(bool resident)? residencyChanged,
+    TResult? Function()? continueButtonTapped,
+    TResult? Function(String? phoneNumber, String? accessToken)? initialize,
+  }) {
+    return initialize?.call(phoneNumber, accessToken);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String passportId)? passportIdChanged,
+    TResult Function(DateTime? dateOfBirth)? dateOfBirthChanged,
+    TResult Function(bool resident)? residencyChanged,
+    TResult Function()? continueButtonTapped,
+    TResult Function(String? phoneNumber, String? accessToken)? initialize,
+    required TResult orElse(),
+  }) {
+    if (initialize != null) {
+      return initialize(phoneNumber, accessToken);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_MyIdPassportIdChanged value) passportIdChanged,
+    required TResult Function(_MyIdDateOfBirthChanged value) dateOfBirthChanged,
+    required TResult Function(_MyIdResidencyChanged value) residencyChanged,
+    required TResult Function(_MyIdContinueButtonTapped value)
+        continueButtonTapped,
+    required TResult Function(_MyIdInitialize value) initialize,
+  }) {
+    return initialize(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_MyIdPassportIdChanged value)? passportIdChanged,
+    TResult? Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
+    TResult? Function(_MyIdResidencyChanged value)? residencyChanged,
+    TResult? Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult? Function(_MyIdInitialize value)? initialize,
+  }) {
+    return initialize?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_MyIdPassportIdChanged value)? passportIdChanged,
+    TResult Function(_MyIdDateOfBirthChanged value)? dateOfBirthChanged,
+    TResult Function(_MyIdResidencyChanged value)? residencyChanged,
+    TResult Function(_MyIdContinueButtonTapped value)? continueButtonTapped,
+    TResult Function(_MyIdInitialize value)? initialize,
+    required TResult orElse(),
+  }) {
+    if (initialize != null) {
+      return initialize(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _MyIdInitialize implements MyIdEvent {
+  const factory _MyIdInitialize(
+      {final String? phoneNumber,
+      final String? accessToken}) = _$MyIdInitializeImpl;
 
   String? get phoneNumber;
+  String? get accessToken;
   @JsonKey(ignore: true)
-  _$$MyIdContinueButtonTappedImplCopyWith<_$MyIdContinueButtonTappedImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$MyIdInitializeImplCopyWith<_$MyIdInitializeImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -696,6 +865,8 @@ mixin _$MyIdState {
   String get error => throw _privateConstructorUsedError;
   DateTime? get dateOfBirth => throw _privateConstructorUsedError;
   MyIdAuthStatus get authStatus => throw _privateConstructorUsedError;
+  String? get phoneNumber => throw _privateConstructorUsedError;
+  String? get accessToken => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $MyIdStateCopyWith<MyIdState> get copyWith =>
@@ -713,7 +884,9 @@ abstract class $MyIdStateCopyWith<$Res> {
       ResidenceType residencyType,
       String error,
       DateTime? dateOfBirth,
-      MyIdAuthStatus authStatus});
+      MyIdAuthStatus authStatus,
+      String? phoneNumber,
+      String? accessToken});
 }
 
 /// @nodoc
@@ -735,6 +908,8 @@ class _$MyIdStateCopyWithImpl<$Res, $Val extends MyIdState>
     Object? error = null,
     Object? dateOfBirth = freezed,
     Object? authStatus = null,
+    Object? phoneNumber = freezed,
+    Object? accessToken = freezed,
   }) {
     return _then(_value.copyWith(
       passportId: null == passportId
@@ -761,6 +936,14 @@ class _$MyIdStateCopyWithImpl<$Res, $Val extends MyIdState>
           ? _value.authStatus
           : authStatus // ignore: cast_nullable_to_non_nullable
               as MyIdAuthStatus,
+      phoneNumber: freezed == phoneNumber
+          ? _value.phoneNumber
+          : phoneNumber // ignore: cast_nullable_to_non_nullable
+              as String?,
+      accessToken: freezed == accessToken
+          ? _value.accessToken
+          : accessToken // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -779,7 +962,9 @@ abstract class _$$MyIdStateImplCopyWith<$Res>
       ResidenceType residencyType,
       String error,
       DateTime? dateOfBirth,
-      MyIdAuthStatus authStatus});
+      MyIdAuthStatus authStatus,
+      String? phoneNumber,
+      String? accessToken});
 }
 
 /// @nodoc
@@ -799,6 +984,8 @@ class __$$MyIdStateImplCopyWithImpl<$Res>
     Object? error = null,
     Object? dateOfBirth = freezed,
     Object? authStatus = null,
+    Object? phoneNumber = freezed,
+    Object? accessToken = freezed,
   }) {
     return _then(_$MyIdStateImpl(
       passportId: null == passportId
@@ -825,6 +1012,14 @@ class __$$MyIdStateImplCopyWithImpl<$Res>
           ? _value.authStatus
           : authStatus // ignore: cast_nullable_to_non_nullable
               as MyIdAuthStatus,
+      phoneNumber: freezed == phoneNumber
+          ? _value.phoneNumber
+          : phoneNumber // ignore: cast_nullable_to_non_nullable
+              as String?,
+      accessToken: freezed == accessToken
+          ? _value.accessToken
+          : accessToken // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -838,7 +1033,9 @@ class _$MyIdStateImpl implements _MyIdState {
       this.residencyType = ResidenceType.resident,
       this.error = '',
       this.dateOfBirth,
-      this.authStatus = MyIdAuthStatus.initial});
+      this.authStatus = MyIdAuthStatus.initial,
+      this.phoneNumber,
+      this.accessToken});
 
   @override
   final String passportId;
@@ -855,10 +1052,14 @@ class _$MyIdStateImpl implements _MyIdState {
   @override
   @JsonKey()
   final MyIdAuthStatus authStatus;
+  @override
+  final String? phoneNumber;
+  @override
+  final String? accessToken;
 
   @override
   String toString() {
-    return 'MyIdState(passportId: $passportId, dataIsValid: $dataIsValid, residencyType: $residencyType, error: $error, dateOfBirth: $dateOfBirth, authStatus: $authStatus)';
+    return 'MyIdState(passportId: $passportId, dataIsValid: $dataIsValid, residencyType: $residencyType, error: $error, dateOfBirth: $dateOfBirth, authStatus: $authStatus, phoneNumber: $phoneNumber, accessToken: $accessToken)';
   }
 
   @override
@@ -876,12 +1077,16 @@ class _$MyIdStateImpl implements _MyIdState {
             (identical(other.dateOfBirth, dateOfBirth) ||
                 other.dateOfBirth == dateOfBirth) &&
             (identical(other.authStatus, authStatus) ||
-                other.authStatus == authStatus));
+                other.authStatus == authStatus) &&
+            (identical(other.phoneNumber, phoneNumber) ||
+                other.phoneNumber == phoneNumber) &&
+            (identical(other.accessToken, accessToken) ||
+                other.accessToken == accessToken));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, passportId, dataIsValid,
-      residencyType, error, dateOfBirth, authStatus);
+      residencyType, error, dateOfBirth, authStatus, phoneNumber, accessToken);
 
   @JsonKey(ignore: true)
   @override
@@ -897,7 +1102,9 @@ abstract class _MyIdState implements MyIdState {
       final ResidenceType residencyType,
       final String error,
       final DateTime? dateOfBirth,
-      final MyIdAuthStatus authStatus}) = _$MyIdStateImpl;
+      final MyIdAuthStatus authStatus,
+      final String? phoneNumber,
+      final String? accessToken}) = _$MyIdStateImpl;
 
   @override
   String get passportId;
@@ -911,6 +1118,10 @@ abstract class _MyIdState implements MyIdState {
   DateTime? get dateOfBirth;
   @override
   MyIdAuthStatus get authStatus;
+  @override
+  String? get phoneNumber;
+  @override
+  String? get accessToken;
   @override
   @JsonKey(ignore: true)
   _$$MyIdStateImplCopyWith<_$MyIdStateImpl> get copyWith =>

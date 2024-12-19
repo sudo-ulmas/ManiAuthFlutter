@@ -456,11 +456,9 @@ packages:
   mani_uikit:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "80f64f590d410f489dfdc6caa214bd6c375a096e"
-      url: "https://github.com/sudo-ulmas/ManiUIKit.git"
-    source: git
+      path: "../mani_uikit"
+      relative: true
+    source: path
     version: "0.0.1"
   mask_text_input_formatter:
     dependency: "direct main"
