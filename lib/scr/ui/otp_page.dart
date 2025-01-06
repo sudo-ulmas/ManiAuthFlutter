@@ -230,7 +230,7 @@ class _OtpPageState extends State<OtpPage> {
                       bottom: MediaQuery.of(context).viewInsets.bottom + AppDimensions.verticalBigGap,
                     ),
                     child: SharedButton(
-                      title: 'continue',
+                      title: context.l10n.letsContinue,
                       disabled: controller.text.length != 6,
                       onTap: () {
                         switch (path) {

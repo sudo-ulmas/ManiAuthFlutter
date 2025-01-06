@@ -23,10 +23,9 @@ dependencies:
   freezed_annotation: ^2.4.1
   go_router: any #^12.1.3
   mani_uikit:
-    path: ../mani_uikit
-    # git:
-    #   url: https://github.com/sudo-ulmas/ManiUIKit.git
-      # ref: develop
+    git:
+      url: http://gitlab.yagona.io/mobile/mani-uikit.git
+      ref: develop
 
   myid_wrapper:
     git:
