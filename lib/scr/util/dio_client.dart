@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-const String addressDev = 'http://merchant.yagona.io:1065';
+const String addressDev = 'https://merchant-gateway.yagona.io';
 const String addressProd = 'https://merchant.mani.uz';
 const String version = 'api/v1';
 const String merchantPrefix = 'merchant/';
