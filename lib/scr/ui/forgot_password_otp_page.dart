@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/forgot_password_bloc/forgot_password_bloc.dart';
 import 'package:mani_auth_plugin/scr/bloc/my_id_bloc/my_id_bloc.dart';
@@ -156,7 +155,7 @@ class _ForgotPasswordOtpPageState extends State<ForgotPasswordOtpPage> {
                         Align(
                           child: Text(
                             '${context.l10n.youCanReceiveNewOtpIn} 00:45',
-                            style: context.textTheme.subtitleTextStyle.copyWith(fontSize: 12.sp),
+                            style: context.textTheme.subtitleTextStyle.copyWith(fontSize: 12),
                             textAlign: TextAlign.center,
                           ),
                         ),

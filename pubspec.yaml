@@ -18,7 +18,6 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
-  flutter_screenutil: ^5.9.3
   freezed: ^3.0.6
   freezed_annotation: ^3.0.0
   go_router: any #^12.1.3

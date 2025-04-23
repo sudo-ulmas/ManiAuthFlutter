@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/login_bloc/login_bloc.dart';
 import 'package:mani_auth_plugin/scr/util/app_router.dart';
@@ -46,7 +45,7 @@ class _LoginFormState extends State<LoginForm> {
                   style: context.textTheme.subtitleTextStyle,
                 ),
                 SizedBox(
-                  height: AppDimensions.verticalBigGap.h,
+                  height: AppDimensions.verticalBigGap
                 ),
                 InputTextField(
                   textInputAction: TextInputAction.next,

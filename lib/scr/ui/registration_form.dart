@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/registration/registration_bloc.dart';
-import 'package:mani_auth_plugin/scr/ui/auth_page.dart';
 import 'package:mani_auth_plugin/scr/util/app_router.dart';
 import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
 import 'package:mani_uikit/mani_uikit.dart';
@@ -40,7 +38,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                   context.l10n.enterYourPhoneToContinue,
                   style: context.textTheme.subtitleTextStyle,
                 ),
-                SizedBox(height: AppDimensions.verticalBigGap.h),
+                SizedBox(height: AppDimensions.verticalBigGap),
                 InputTextField(
                   onChanged: (value) {
                     if (maskFormatter.isFill()) {

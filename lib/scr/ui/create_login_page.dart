@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/registration/registration_bloc.dart';
-import 'package:mani_auth_plugin/scr/ui/date_picker_field.dart';
 import 'package:mani_auth_plugin/scr/util/app_router.dart';
 import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
 import 'package:mani_uikit/mani_uikit.dart';
@@ -57,7 +55,8 @@ class _CreateLoginPageState extends State<CreateLoginPage> {
               builder: (BuildContext context, BoxConstraints constraints) => Container(
                 constraints: BoxConstraints(
                   maxHeight: constraints.maxHeight,
-                  minHeight: 1.sh - topViewInsets - kToolbarHeight.h - 110.h + (hasFocus ? 200 : 0),
+                  minHeight:
+                      MediaQuery.sizeOf(context).height - topViewInsets - kToolbarHeight - 110 + (hasFocus ? 200 : 0),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -97,7 +96,7 @@ class _CreateLoginPageState extends State<CreateLoginPage> {
                             ],
                           ),
                         ),
-                        SizedBox(height: AppDimensions.verticalStandardGap.h),
+                        SizedBox(height: AppDimensions.verticalStandardGap),
                         SharedCard(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,7 +128,7 @@ class _CreateLoginPageState extends State<CreateLoginPage> {
                                   setState(() {});
                                 },
                               ),
-                              SizedBox(height: AppDimensions.verticalMediumGap.h),
+                              SizedBox(height: AppDimensions.verticalMediumGap),
                               InputTextField(
                                 textInputAction: TextInputAction.send,
                                 onSubmitted: (_) {

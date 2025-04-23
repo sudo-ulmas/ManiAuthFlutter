@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/forgot_password_bloc/forgot_password_bloc.dart';
 import 'package:mani_auth_plugin/scr/ui/cancel_button.dart';
-import 'package:mani_auth_plugin/scr/ui/date_picker_field.dart';
 import 'package:mani_auth_plugin/scr/util/app_router.dart';
 import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
 import 'package:mani_uikit/mani_uikit.dart';
@@ -53,14 +51,17 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
           isLoading: state is ForgotPasswordLoading,
           actionButton: const CancelButton(),
           child: ColoredBox(
-            color: Colors.black.withOpacity(0),
+            color: Colors.black.withValues(alpha: 0),
             child: SingleChildScrollView(
               child: LayoutBuilder(
                 builder: (context, constraints) {
                   return ConstrainedBox(
                     constraints: BoxConstraints(
                       maxHeight: constraints.maxHeight,
-                      minHeight: 1.sh - MediaQuery.of(context).viewInsets.top - kToolbarHeight.h - 110.h,
+                      minHeight: MediaQuery.sizeOf(context).height -
+                          MediaQuery.viewInsetsOf(context).top -
+                          kToolbarHeight -
+                          110,
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -82,17 +83,13 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                                     context.l10n.createPassword,
                                     style: context.textTheme.subtitleTextStyle,
                                   ),
-                                  SizedBox(
-                                    height: AppDimensions.verticalBigGap.h,
-                                  ),
+                                  SizedBox(height: AppDimensions.verticalBigGap),
                                   InputTextField(
                                     controller: passwordController,
                                     hintText: context.l10n.password,
                                     isPassword: true,
                                   ),
-                                  SizedBox(
-                                    height: AppDimensions.verticalMediumGap.h,
-                                  ),
+                                  SizedBox(height: AppDimensions.verticalMediumGap),
                                   InputTextField(
                                     controller: repeatPasswordController,
                                     hintText: context.l10n.repeatPassword,
@@ -108,8 +105,8 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                         ),
                         Padding(
                           padding: EdgeInsets.only(
-                            bottom: MediaQuery.of(context).viewInsets.bottom + AppDimensions.verticalBigGap,
-                          ).r,
+                            bottom: MediaQuery.of(context).viewInsets.bottom + AppDimensions.verticalBigGap
+                          ),
                           child: SharedButton(
                             disabled: passwordController.text.isEmpty || repeatPasswordController.text.isEmpty,
                             title: context.l10n.letsContinue,

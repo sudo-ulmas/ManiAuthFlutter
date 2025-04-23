@@ -3,17 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/my_id_bloc/my_id_bloc.dart';
 import 'package:mani_auth_plugin/scr/bloc/otp_bloc/otp_bloc.dart';
 import 'package:mani_auth_plugin/scr/model/auth_path.dart';
 import 'package:mani_auth_plugin/scr/model/error_handler.dart';
-import 'package:mani_auth_plugin/scr/repository/auth_repository.dart';
-import 'package:mani_auth_plugin/scr/ui/auth_page.dart';
 import 'package:mani_auth_plugin/scr/ui/cancel_button.dart';
 import 'package:mani_auth_plugin/scr/util/app_router.dart';
-import 'package:mani_auth_plugin/scr/util/dio_client.dart';
 import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
 import 'package:mani_uikit/mani_uikit.dart';
 import 'package:pinput/pinput.dart';
@@ -216,7 +212,7 @@ class _OtpPageState extends State<OtpPage> {
                             _ => Center(
                                 child: Text(
                                   '${context.l10n.youCanReceiveNewOtpIn} $time',
-                                  style: context.textTheme.subtitleTextStyle.copyWith(fontSize: 12.sp),
+                                  style: context.textTheme.subtitleTextStyle.copyWith(fontSize: 12),
                                   textAlign: TextAlign.center,
                                 ),
                               ),

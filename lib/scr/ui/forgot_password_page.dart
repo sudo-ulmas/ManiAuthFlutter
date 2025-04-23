@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/forgot_password_bloc/forgot_password_bloc.dart';
-import 'package:mani_auth_plugin/scr/ui/auth_page.dart';
 import 'package:mani_auth_plugin/scr/ui/cancel_button.dart';
 import 'package:mani_auth_plugin/scr/util/app_router.dart';
 import 'package:mani_auth_plugin/scr/util/l10n/l10n.dart';
@@ -63,7 +62,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: Colors.black.withOpacity(0),
+      color: Colors.black.withValues(alpha: 0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -77,7 +76,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                 ),
                 const SizedBox(height: AppDimensions.verticalSmallGap),
                 Text(
-context.l10n.enterYourPhone,
+                  context.l10n.enterYourPhone,
                   style: context.textTheme.subtitleTextStyle,
                 ),
                 const SizedBox(height: AppDimensions.verticalBigGap),
@@ -111,7 +110,7 @@ context.l10n.enterYourPhone,
             ),
             child: SharedButton(
               disabled: !maskFormatter.isFill(),
-              title:context.l10n.letsContinue,
+              title: context.l10n.letsContinue,
               onTap: () => context.read<ForgotPasswordBloc>().add(
                     ForgotPasswordEvent.phoneSubmitted(
                       maskFormatter.getUnmaskedText(),

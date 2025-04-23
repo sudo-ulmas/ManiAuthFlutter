@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mani_auth_plugin/scr/bloc/login_bloc/login_bloc.dart';
 import 'package:mani_auth_plugin/scr/bloc/registration/registration_bloc.dart';
@@ -70,7 +69,7 @@ class _AuthPageState extends State<AuthPage> {
                 child: Column(
                   children: [
                     CustomCupertinoSlidingSegmentedControl(
-                      padding: const EdgeInsets.all(AppDimensions.gap).r,
+                      padding: const EdgeInsets.all(AppDimensions.gap),
                       backgroundColor: Colors.white,
                       thumbColor: context.colorScheme.primaryVariantColor,
                       groupValue: currentSegment,
