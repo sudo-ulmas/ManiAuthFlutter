@@ -1,7 +1,7 @@
 mani_uikit
 3.2
-file:///Users/abdullah/.pub-cache/git/ManiUIKit-e7f1837794d65e09cacd501e49f1a753fb7c3d44/
-file:///Users/abdullah/.pub-cache/git/ManiUIKit-e7f1837794d65e09cacd501e49f1a753fb7c3d44/lib/
+file:///Users/abdullah/.pub-cache/git/ManiUIKit-f9b7764c38f20d247bb58416dc7008da39bf47e3/
+file:///Users/abdullah/.pub-cache/git/ManiUIKit-f9b7764c38f20d247bb58416dc7008da39bf47e3/lib/
 myid_wrapper
 3.0
 file:///Users/abdullah/.pub-cache/git/myid_wrapper-bee3d79df57ce1a9c5c1992827a47dd612bc48bc/
@@ -31,9 +31,9 @@ auto_size_text
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/auto_size_text-3.0.0/
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/auto_size_text-3.0.0/lib/
 bloc
-2.12
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/bloc-8.1.4/
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/bloc-8.1.4/lib/
+2.14
+file:///Users/abdullah/.pub-cache/hosted/pub.dev/bloc-9.0.0/
+file:///Users/abdullah/.pub-cache/hosted/pub.dev/bloc-9.0.0/lib/
 boolean_selector
 3.1
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/boolean_selector-2.1.2/
@@ -131,9 +131,9 @@ fixnum
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/fixnum-1.1.1/
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/fixnum-1.1.1/lib/
 flutter_bloc
-2.12
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.6/
-file:///Users/abdullah/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.6/lib/
+2.14
+file:///Users/abdullah/.pub-cache/hosted/pub.dev/flutter_bloc-9.1.0/
+file:///Users/abdullah/.pub-cache/hosted/pub.dev/flutter_bloc-9.1.0/lib/
 flutter_lints
 3.5
 file:///Users/abdullah/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0/
