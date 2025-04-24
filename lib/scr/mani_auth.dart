@@ -34,6 +34,7 @@ class ManiAuth extends StatefulWidget {
 class _ManiAuthState extends State<ManiAuth> {
   Size get designSize => const Size(375, 812);
   final appRouter = AppRouter();
+  final themeCubit = ThemeCubit(AppThemeData.fromColorScheme(AppColorScheme.light()));
 
   @override
   void initState() {
@@ -55,9 +56,9 @@ class _ManiAuthState extends State<ManiAuth> {
         BlocProvider(
           create: (context) => ForgotPasswordBloc(context.read()),
         ),
-        BlocProvider(
-          create: (context) => ThemeCubit(AppThemeData.fromColorScheme(AppColorScheme.light())),
-        ),
+        // BlocProvider(
+        //   create: (context) => ThemeCubit(AppThemeData.fromColorScheme(AppColorScheme.light())),
+        // ),
         BlocProvider(
             create: (context) => pinflValid(widget.pinfl)
                 ? (MyIdBloc(context.read())
@@ -66,8 +67,8 @@ class _ManiAuthState extends State<ManiAuth> {
                   ..add(MyIdEvent.dateOfBirthChanged(birthdateFromPinfl(widget.pinfl))))
                 : MyIdBloc(context.read())),
       ],
-      child: BlocProvider(
-          create: (BuildContext context) => ThemeCubit(AppThemeData.fromColorScheme(AppColorScheme.light())),
+      child: BlocProvider.value(
+          value: themeCubit,
           child: BlocBuilder<ThemeCubit, AppThemeData>(
             builder: (_, themeData) {
               return AppTheme(
@@ -78,9 +79,7 @@ class _ManiAuthState extends State<ManiAuth> {
                   supportedLocales: AppLocalizations.supportedLocales,
                   debugShowCheckedModeBanner: false,
                   title: 'Mani Auth',
-                  theme: ThemeData(
-                    primarySwatch: Colors.blue,
-                  ),
+                  theme: ThemeData(primarySwatch: Colors.blue),
                   routerConfig: appRouter.goRouter,
                 ),
               );

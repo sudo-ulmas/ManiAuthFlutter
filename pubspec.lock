@@ -275,14 +275,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_screenutil:
-    dependency: transitive
-    description:
-      name: flutter_screenutil
-      sha256: "8239210dd68bee6b0577aa4a090890342d04a136ce1c81f98ee513fc0ce891de"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.9.3"
   flutter_svg:
     dependency: transitive
     description:
@@ -458,7 +450,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: f9b7764c38f20d247bb58416dc7008da39bf47e3
+      resolved-ref: "5aade24599e8fbfa7173ab17e45b9c3a23bd3aa8"
       url: "https://github.com/sudo-ulmas/ManiUIKit"
     source: git
     version: "0.0.1"
@@ -507,7 +499,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: bee3d79df57ce1a9c5c1992827a47dd612bc48bc
+      resolved-ref: ec6695605559dcaa7d23ac2c701a504b1d591f18
       url: "https://github.com/sudo-ulmas/myid_wrapper.git"
     source: git
     version: "0.0.1"
