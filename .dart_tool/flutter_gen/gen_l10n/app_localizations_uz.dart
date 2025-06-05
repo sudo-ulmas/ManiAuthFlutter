@@ -9,275 +9,275 @@ class AppLocalizationsUz extends AppLocalizations {
   AppLocalizationsUz([String locale = 'uz']) : super(locale);
 
   @override
-  String get identification => 'Идентификация';
+  String get identification => 'Identifikatsiya';
 
   @override
-  String get youNeedToPassIdentification => 'Вам необходимо пройти подтверждение личности';
+  String get youNeedToPassIdentification => 'Shaxsni tasdiqlashingiz kerak';
 
   @override
-  String get passportNumberOfPinfl => 'Номер паспорта или ПИНФЛ';
+  String get passportNumberOfPinfl => 'Pasport raqami yoki PINFL';
 
   @override
-  String get dateOfBirth => 'Дата рождения';
+  String get dateOfBirth => 'Tug\'ilgan sana';
 
   @override
-  String get ddmmyyy => 'ДД ММ ГГГГ';
+  String get ddmmyyy => 'KK OO YYYY';
 
   @override
-  String get january => 'Январь';
+  String get january => 'Yanvar';
 
   @override
-  String get february => 'Февраль';
+  String get february => 'Fevral';
 
   @override
-  String get march => 'Март';
+  String get march => 'Mart';
 
   @override
-  String get april => 'Апрель';
+  String get april => 'Aprel';
 
   @override
-  String get may => 'Май';
+  String get may => 'May';
 
   @override
-  String get june => 'Июнь';
+  String get june => 'Iyun';
 
   @override
-  String get july => 'Июль';
+  String get july => 'Iyul';
 
   @override
-  String get august => 'Август';
+  String get august => 'Avgust';
 
   @override
-  String get september => 'Сентябрь';
+  String get september => 'Sentabr';
 
   @override
-  String get october => 'Октябрь';
+  String get october => 'Oktabr';
 
   @override
-  String get november => 'Ноябрь';
+  String get november => 'Noyabr';
 
   @override
-  String get december => 'Декабрь';
+  String get december => 'Dekabr';
 
   @override
-  String get letsContinue => 'Продолжить';
+  String get letsContinue => 'Davom etish';
 
   @override
-  String get registrationInYagona => 'Регистрация в Mani';
+  String get registrationInYagona => 'Pully-ga ro‘yxatdan o‘tish';
 
   @override
-  String get enterYourPhoneToContinue => 'Для продолжения введите номер вашего телефона или почту';
+  String get enterYourPhoneToContinue => 'Davom etish uchun telefon raqamingizni kiriting';
 
   @override
-  String get recoverPassword => 'Восстановить пароль';
+  String get recoverPassword => 'Parolni tiklash';
 
   @override
-  String get byRegisteringYouAgreeTo => 'Регистрируясь в мобильном приложении, вы подтверждаете свое согласие с условиями';
+  String get byRegisteringYouAgreeTo => 'Mobil ilovaga ro‘yxatdan o‘tish orqali siz shartlarga rozilik bildirasiz';
 
   @override
-  String get privacyPolicy => 'публичной оферты и политики конфиденциальности';
+  String get privacyPolicy => 'ommaviy oferta va maxfiylik siyosati';
 
   @override
-  String get appVersion => 'Версия';
+  String get appVersion => 'Versiya';
 
   @override
-  String get signIn => 'Вход';
+  String get signIn => 'Kirish';
 
   @override
-  String get registration => 'Регистрация';
+  String get registration => 'Ro‘yxatdan o‘tish';
 
   @override
-  String get phoneNumber => 'Номер телефона';
+  String get phoneNumber => 'Telefon raqam';
 
   @override
-  String get otpCode => 'Код подтверждения';
+  String get otpCode => 'Tasdiqlash kodi';
 
   @override
-  String get codeSentTo => 'СМС-код подтверждения отправлен на номер';
+  String get codeSentTo => 'Tasdiqlash SMS-kodi ushbu raqamga yuborildi';
 
   @override
-  String get youCanReceiveNewOtpIn => 'Вы можете получить новый \nСМС-код через';
+  String get youCanReceiveNewOtpIn => 'Yangi SMS-kod olish';
 
   @override
-  String get createLogin => 'Придумайте логин';
+  String get createLogin => 'Login yarating';
 
   @override
-  String get createLoginDescription => 'Придумайте логин, он понадобится, если вы выйдите из приложения или переустановите его';
+  String get createLoginDescription => 'Login yarating, u dasturdan chiqib ketganingizda yoki uni qayta o‘rnatganingizda kerak bo‘ladi';
 
   @override
-  String get password => 'Пароль';
+  String get password => 'Parol';
 
   @override
-  String get createPassword => 'Придумайте пароль, он понадобится, если вы выйдите из приложения или переустановите его';
+  String get createPassword => 'Parol yarating, u dasturdan chiqib ketganingizda yoki uni qayta o‘rnatganingizda kerak bo‘ladi';
 
   @override
-  String get repeatPassword => 'Повторите пароль';
+  String get repeatPassword => 'Parolni takrorlang';
 
   @override
-  String get login => 'Логин';
+  String get login => 'Login';
 
   @override
-  String get signInToYagona => 'Вход в Mani';
+  String get signInToYagona => 'Pully-ga kirish';
 
   @override
-  String get signInDescription => 'Введите ваше имя пользователя и пароль, чтобы получить доступ к приложение Mani.';
+  String get signInDescription => 'Pully ilovasiga kirish uchun login va parolingizni kiriting.';
 
   @override
-  String get recoverPasswordTitle => 'Восстановление пароля';
+  String get recoverPasswordTitle => 'Parolni tiklash';
 
   @override
-  String get enterYourPhone => 'Введите номер телефона для восстановления пароля';
+  String get enterYourPhone => 'Parolni tiklash uchun telefon raqamingizni kiriting';
 
   @override
-  String get newPassword => 'Новый пароль';
+  String get newPassword => 'Yangi parol';
 
   @override
-  String get resident => 'Резидент';
+  String get resident => 'Rezident';
 
   @override
-  String get resendOpt => 'Получить новый СМС-код';
+  String get resendOpt => 'Yangi SMS-kod olish';
 
   @override
-  String get userNotFound => 'Пользователь не найден';
+  String get userNotFound => 'Foydalanuvchi topilmadi';
 
   @override
-  String get userAlreadyExists => 'Пользователь уже существует';
+  String get userAlreadyExists => 'Foydalanuvchi allaqachon mavjud';
 
   @override
-  String get inactiveUser => 'Неактивный пользователь';
+  String get inactiveUser => 'Faol bo‘lmagan foydalanuvchi';
 
   @override
-  String get wrongPassword => 'Неправильный пароль';
+  String get wrongPassword => 'Noto‘g‘ri parol';
 
   @override
-  String get temporarilyBlocked => 'Временно заблокирован';
+  String get temporarilyBlocked => 'Vaqtincha bloklangan';
 
   @override
-  String get recordNotFound => 'Запись не найдена';
+  String get recordNotFound => 'Yozuv topilmadi';
 
   @override
-  String get wrongOtp => 'Неправильный OTP';
+  String get wrongOtp => 'Noto‘g‘ri OTP';
 
   @override
-  String get integrationError => 'Ошибка интеграции';
+  String get integrationError => 'Integratsiya xatosi';
 
   @override
-  String get emptyLogin => 'Поле логин не может быть пустым';
+  String get emptyLogin => 'Login maydoni bo‘sh bo‘lishi mumkin emas';
 
   @override
-  String get shortLogin => 'Логин не может быть меньше 5 символов';
+  String get shortLogin => 'Login 5 ta belgidan kam bo‘lishi mumkin emas';
 
   @override
-  String get emptyPassword => 'Поле пароль не может быть пустым';
+  String get emptyPassword => 'Parol maydoni bo‘sh bo‘lishi mumkin emas';
 
   @override
-  String get shortPassword => 'Пароль не может быть меньше 6 символов';
+  String get shortPassword => 'Parol 6 ta belgidan kam bo‘lishi mumkin emas';
 
   @override
-  String get emptyPhone => 'Номер телефона не может быть пустым';
+  String get emptyPhone => 'Telefon raqami bo‘sh bo‘lishi mumkin emas';
 
   @override
-  String get shortPhone => 'Номер телефона должен быть равен 9 цифрам';
+  String get shortPhone => 'Telefon raqami 9 ta raqam bo‘lishi kerak';
 
   @override
-  String get onlyDigitsPhone => 'Номер телефона должен состоять из цифр';
+  String get onlyDigitsPhone => 'Telefon raqami faqat raqamlardan iborat bo‘lishi kerak';
 
   @override
-  String get notVerifiedOtp => 'ОTP код не верифицирован';
+  String get notVerifiedOtp => 'OTP kodi tasdiqlanmagan';
 
   @override
-  String get wrongStatusOtpResend => 'Неправильный статус OTP resend';
+  String get wrongStatusOtpResend => 'OTP qayta yuborish statusi noto‘g‘ri';
 
   @override
-  String get emptyOtp => 'Поле OTP не может быть пустым';
+  String get emptyOtp => 'OTP maydoni bo‘sh bo‘lishi mumkin emas';
 
   @override
-  String get shortOtp => 'OTP должен быть равен 6 цифрам';
+  String get shortOtp => 'OTP 6 ta raqam bo‘lishi kerak';
 
   @override
-  String get onlyDigitsOtp => 'OTP должен состоять из цифр';
+  String get onlyDigitsOtp => 'OTP faqat raqamlardan iborat bo‘lishi kerak';
 
   @override
-  String get otpExpired => 'Срок действия OTP истёк. Отправьте заново код';
+  String get otpExpired => 'OTP muddati tugagan. Yangi kod yuboring';
 
   @override
-  String get notFound => 'Страница не найдена';
+  String get notFound => 'Sahifa topilmadi';
 
   @override
-  String get serverError => 'Ошибка в сервере';
+  String get serverError => 'Server xatosi';
 
   @override
-  String get timeout => 'Сервер не отвечает, попробуйте еще раз';
+  String get timeout => 'Server javob bermayapti, qaytadan urinib ko‘ring';
 
   @override
-  String get passwordMismatch => 'Новый пароль не совпадает с паролем подтверждения';
+  String get passwordMismatch => 'Yangi parol tasdiqlash paroli bilan mos kelmaydi';
 
   @override
-  String get loginCantStartWithNumber => 'Логин не может начинаться с цифры';
+  String get loginCantStartWithNumber => 'Login raqam bilan boshlanmasligi kerak';
 
   @override
-  String get fieldCanNotBeEmpty => 'Поле логин/номер телефона не может быть пустым';
+  String get fieldCanNotBeEmpty => 'Login/telefon raqami maydoni bo‘sh bo‘lishi mumkin emas';
 
   @override
-  String get wrongVerificationStatus => 'Неправильный статус для верификации';
+  String get wrongVerificationStatus => 'Noto‘g‘ri verifikatsiya holati';
 
   @override
-  String get loginAlreadyExists => 'Такой логин уже есть в системе';
+  String get loginAlreadyExists => 'Bu login allaqachon tizimda mavjud';
 
   @override
-  String get phoneAlreadyExists => 'Такой номер телефона уже есть в системе';
+  String get phoneAlreadyExists => 'Bu telefon raqami allaqachon tizimda mavjud';
 
   @override
-  String get wrongPinfl => 'Неправильный ПИНФЛ';
+  String get wrongPinfl => 'Noto‘g‘ri PINFL';
 
   @override
-  String get myIdIntegrationError => 'Ошибка при интеграции с MyID';
+  String get myIdIntegrationError => 'MyID bilan integratsiya xatosi';
 
   @override
-  String get userAlreadyIdentified => 'Пользователь уже идентифицирован';
+  String get userAlreadyIdentified => 'Foydalanuvchi allaqachon identifikatsiyadan o‘tgan';
 
   @override
-  String get userInfoNotFound => 'Информация о пользователе не найдена';
+  String get userInfoNotFound => 'Foydalanuvchi ma’lumoti topilmadi';
 
   @override
-  String get myIdCodeIsEmpty => 'Код MyID не может быть пустым';
+  String get myIdCodeIsEmpty => 'MyID kodi bo‘sh bo‘lishi mumkin emas';
 
   @override
-  String get userIsNotIdentified => 'Не идентифицированный пользователь';
+  String get userIsNotIdentified => 'Identifikatsiyadan o‘tmagan foydalanuvchi';
 
   @override
-  String get noInternet => 'Нет подключения к интернету';
+  String get noInternet => 'Internetga ulanish yo‘q';
 
   @override
-  String get retry => 'Повторить попытку';
+  String get retry => 'Qayta urinish';
 
   @override
-  String get useCellularForIdentification => 'Пожалуйста, отключите Wi-Fi и используйте сотовые данные для идентификации.';
+  String get useCellularForIdentification => 'Iltimos, Wi-Fi-ni o‘chirib, identifikatsiya uchun mobil internetdan foydalaning.';
 
   @override
-  String get success => 'Успешно';
+  String get success => 'Muvaffaqiyatli';
 
   @override
-  String get paymentSystemNotFound => 'Платежная система не найдена';
+  String get paymentSystemNotFound => 'To‘lov tizimi topilmadi';
 
   @override
-  String get userIdMismatch => 'Запрошенный идентификатор пользователя не владеет текущей учетной записью';
+  String get userIdMismatch => 'So‘ralgan foydalanuvchi identifikatori joriy akkauntga tegishli emas';
 
   @override
-  String get problemBetweenMicroservices => 'Проблема с межсервисной связью';
+  String get problemBetweenMicroservices => 'Mikroxizmatlar o‘rtasidagi muammo';
 
   @override
-  String get noProfileFoundForUser => 'Для пользователя не найдено учетных записей';
+  String get noProfileFoundForUser => 'Foydalanuvchi uchun akkaunt topilmadi';
 
   @override
-  String get couldNotCompleteTheCommand => 'Не удалось выполнить команду';
+  String get couldNotCompleteTheCommand => 'Buyruqni bajarib bo‘lmadi';
 
   @override
-  String get noProfileWasFoundForUsernameAndPassword => 'Профиль с текущим phone или username пользователя не найден.';
+  String get noProfileWasFoundForUsernameAndPassword => 'Ushbu foydalanuvchi nomi yoki telefon raqamiga mos keluvchi profil topilmadi.';
 
   @override
-  String get tooMantAttempts => 'Слишком много попыток.';
+  String get tooMantAttempts => 'Juda ko‘p urinishlar.';
 
   @override
-  String get errorHappened => 'Возникла ошибка';
+  String get errorHappened => 'Xatolik yuz berdi';
 }

@@ -206,13 +206,13 @@ abstract class AppLocalizations {
   /// No description provided for @registrationInYagona.
   ///
   /// In ru, this message translates to:
-  /// **'Регистрация в Mani'**
+  /// **'Регистрация в Pully'**
   String get registrationInYagona;
 
   /// No description provided for @enterYourPhoneToContinue.
   ///
   /// In ru, this message translates to:
-  /// **'Для продолжения введите номер вашего телефона или почту'**
+  /// **'Для продолжения введите номер вашего телефона'**
   String get enterYourPhoneToContinue;
 
   /// No description provided for @recoverPassword.
@@ -314,13 +314,13 @@ abstract class AppLocalizations {
   /// No description provided for @signInToYagona.
   ///
   /// In ru, this message translates to:
-  /// **'Вход в Mani'**
+  /// **'Вход в Pully'**
   String get signInToYagona;
 
   /// No description provided for @signInDescription.
   ///
   /// In ru, this message translates to:
-  /// **'Введите ваше имя пользователя и пароль, чтобы получить доступ к приложение Mani.'**
+  /// **'Введите ваше имя пользователя и пароль, чтобы получить доступ к приложение Pully.'**
   String get signInDescription;
 
   /// No description provided for @recoverPasswordTitle.

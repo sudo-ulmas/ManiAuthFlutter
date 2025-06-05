@@ -63,10 +63,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get letsContinue => 'Продолжить';
 
   @override
-  String get registrationInYagona => 'Регистрация в Mani';
+  String get registrationInYagona => 'Регистрация в Pully';
 
   @override
-  String get enterYourPhoneToContinue => 'Для продолжения введите номер вашего телефона или почту';
+  String get enterYourPhoneToContinue => 'Для продолжения введите номер вашего телефона';
 
   @override
   String get recoverPassword => 'Восстановить пароль';
@@ -117,10 +117,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get login => 'Логин';
 
   @override
-  String get signInToYagona => 'Вход в Mani';
+  String get signInToYagona => 'Вход в Pully';
 
   @override
-  String get signInDescription => 'Введите ваше имя пользователя и пароль, чтобы получить доступ к приложение Mani.';
+  String get signInDescription => 'Введите ваше имя пользователя и пароль, чтобы получить доступ к приложение Pully.';
 
   @override
   String get recoverPasswordTitle => 'Восстановление пароля';
