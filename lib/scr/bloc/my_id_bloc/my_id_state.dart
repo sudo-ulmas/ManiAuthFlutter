@@ -8,7 +8,7 @@ enum MyIdAuthStatus {
 }
 
 @freezed
-class MyIdState with _$MyIdState {
+abstract class MyIdState with _$MyIdState {
   const factory MyIdState({
     required String passportId,
     required bool dataIsValid,

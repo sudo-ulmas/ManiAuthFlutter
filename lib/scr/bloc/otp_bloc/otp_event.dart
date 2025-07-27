@@ -1,7 +1,7 @@
 part of 'otp_bloc.dart';
 
 @freezed
-class OtpEvent with _$OtpEvent {
+abstract class OtpEvent with _$OtpEvent {
   const factory OtpEvent.submittedRegistration({
     required String otp,
     required String phoneNumber,

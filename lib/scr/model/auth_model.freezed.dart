@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,231 +10,151 @@ part of 'auth_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-AuthModel _$AuthModelFromJson(Map<String, dynamic> json) {
-  return _AuthModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$AuthModel {
-  String get phoneNumber => throw _privateConstructorUsedError;
-  String get refreshToken => throw _privateConstructorUsedError;
-  String get accessToken => throw _privateConstructorUsedError;
-  String get userId => throw _privateConstructorUsedError;
-  bool get identified => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $AuthModelCopyWith<AuthModel> get copyWith =>
-      throw _privateConstructorUsedError;
+ String get phoneNumber; String get refreshToken; String get accessToken; String get userId; bool get identified;
+/// Create a copy of AuthModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AuthModelCopyWith<AuthModel> get copyWith => _$AuthModelCopyWithImpl<AuthModel>(this as AuthModel, _$identity);
+
+  /// Serializes this AuthModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AuthModel&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.refreshToken, refreshToken) || other.refreshToken == refreshToken)&&(identical(other.accessToken, accessToken) || other.accessToken == accessToken)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.identified, identified) || other.identified == identified));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,phoneNumber,refreshToken,accessToken,userId,identified);
+
+@override
+String toString() {
+  return 'AuthModel(phoneNumber: $phoneNumber, refreshToken: $refreshToken, accessToken: $accessToken, userId: $userId, identified: $identified)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AuthModelCopyWith<$Res> {
-  factory $AuthModelCopyWith(AuthModel value, $Res Function(AuthModel) then) =
-      _$AuthModelCopyWithImpl<$Res, AuthModel>;
-  @useResult
-  $Res call(
-      {String phoneNumber,
-      String refreshToken,
-      String accessToken,
-      String userId,
-      bool identified});
-}
+abstract mixin class $AuthModelCopyWith<$Res>  {
+  factory $AuthModelCopyWith(AuthModel value, $Res Function(AuthModel) _then) = _$AuthModelCopyWithImpl;
+@useResult
+$Res call({
+ String phoneNumber, String refreshToken, String accessToken, String userId, bool identified
+});
 
+
+
+
+}
 /// @nodoc
-class _$AuthModelCopyWithImpl<$Res, $Val extends AuthModel>
+class _$AuthModelCopyWithImpl<$Res>
     implements $AuthModelCopyWith<$Res> {
-  _$AuthModelCopyWithImpl(this._value, this._then);
+  _$AuthModelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final AuthModel _self;
+  final $Res Function(AuthModel) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? phoneNumber = null,
-    Object? refreshToken = null,
-    Object? accessToken = null,
-    Object? userId = null,
-    Object? identified = null,
-  }) {
-    return _then(_value.copyWith(
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-      refreshToken: null == refreshToken
-          ? _value.refreshToken
-          : refreshToken // ignore: cast_nullable_to_non_nullable
-              as String,
-      accessToken: null == accessToken
-          ? _value.accessToken
-          : accessToken // ignore: cast_nullable_to_non_nullable
-              as String,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String,
-      identified: null == identified
-          ? _value.identified
-          : identified // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
-  }
+/// Create a copy of AuthModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? phoneNumber = null,Object? refreshToken = null,Object? accessToken = null,Object? userId = null,Object? identified = null,}) {
+  return _then(_self.copyWith(
+phoneNumber: null == phoneNumber ? _self.phoneNumber : phoneNumber // ignore: cast_nullable_to_non_nullable
+as String,refreshToken: null == refreshToken ? _self.refreshToken : refreshToken // ignore: cast_nullable_to_non_nullable
+as String,accessToken: null == accessToken ? _self.accessToken : accessToken // ignore: cast_nullable_to_non_nullable
+as String,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as String,identified: null == identified ? _self.identified : identified // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
 }
 
-/// @nodoc
-abstract class _$$AuthModelImplCopyWith<$Res>
-    implements $AuthModelCopyWith<$Res> {
-  factory _$$AuthModelImplCopyWith(
-          _$AuthModelImpl value, $Res Function(_$AuthModelImpl) then) =
-      __$$AuthModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String phoneNumber,
-      String refreshToken,
-      String accessToken,
-      String userId,
-      bool identified});
 }
 
-/// @nodoc
-class __$$AuthModelImplCopyWithImpl<$Res>
-    extends _$AuthModelCopyWithImpl<$Res, _$AuthModelImpl>
-    implements _$$AuthModelImplCopyWith<$Res> {
-  __$$AuthModelImplCopyWithImpl(
-      _$AuthModelImpl _value, $Res Function(_$AuthModelImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? phoneNumber = null,
-    Object? refreshToken = null,
-    Object? accessToken = null,
-    Object? userId = null,
-    Object? identified = null,
-  }) {
-    return _then(_$AuthModelImpl(
-      phoneNumber: null == phoneNumber
-          ? _value.phoneNumber
-          : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-      refreshToken: null == refreshToken
-          ? _value.refreshToken
-          : refreshToken // ignore: cast_nullable_to_non_nullable
-              as String,
-      accessToken: null == accessToken
-          ? _value.accessToken
-          : accessToken // ignore: cast_nullable_to_non_nullable
-              as String,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String,
-      identified: null == identified
-          ? _value.identified
-          : identified // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
-}
 
 /// @nodoc
 @JsonSerializable()
-class _$AuthModelImpl implements _AuthModel {
-  const _$AuthModelImpl(
-      {required this.phoneNumber,
-      required this.refreshToken,
-      required this.accessToken,
-      required this.userId,
-      required this.identified});
 
-  factory _$AuthModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AuthModelImplFromJson(json);
+class _AuthModel implements AuthModel {
+  const _AuthModel({required this.phoneNumber, required this.refreshToken, required this.accessToken, required this.userId, required this.identified});
+  factory _AuthModel.fromJson(Map<String, dynamic> json) => _$AuthModelFromJson(json);
 
-  @override
-  final String phoneNumber;
-  @override
-  final String refreshToken;
-  @override
-  final String accessToken;
-  @override
-  final String userId;
-  @override
-  final bool identified;
+@override final  String phoneNumber;
+@override final  String refreshToken;
+@override final  String accessToken;
+@override final  String userId;
+@override final  bool identified;
 
-  @override
-  String toString() {
-    return 'AuthModel(phoneNumber: $phoneNumber, refreshToken: $refreshToken, accessToken: $accessToken, userId: $userId, identified: $identified)';
-  }
+/// Create a copy of AuthModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AuthModelCopyWith<_AuthModel> get copyWith => __$AuthModelCopyWithImpl<_AuthModel>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AuthModelImpl &&
-            (identical(other.phoneNumber, phoneNumber) ||
-                other.phoneNumber == phoneNumber) &&
-            (identical(other.refreshToken, refreshToken) ||
-                other.refreshToken == refreshToken) &&
-            (identical(other.accessToken, accessToken) ||
-                other.accessToken == accessToken) &&
-            (identical(other.userId, userId) || other.userId == userId) &&
-            (identical(other.identified, identified) ||
-                other.identified == identified));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType, phoneNumber, refreshToken, accessToken, userId, identified);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AuthModelImplCopyWith<_$AuthModelImpl> get copyWith =>
-      __$$AuthModelImplCopyWithImpl<_$AuthModelImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$AuthModelImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$AuthModelToJson(this, );
 }
 
-abstract class _AuthModel implements AuthModel {
-  const factory _AuthModel(
-      {required final String phoneNumber,
-      required final String refreshToken,
-      required final String accessToken,
-      required final String userId,
-      required final bool identified}) = _$AuthModelImpl;
-
-  factory _AuthModel.fromJson(Map<String, dynamic> json) =
-      _$AuthModelImpl.fromJson;
-
-  @override
-  String get phoneNumber;
-  @override
-  String get refreshToken;
-  @override
-  String get accessToken;
-  @override
-  String get userId;
-  @override
-  bool get identified;
-  @override
-  @JsonKey(ignore: true)
-  _$$AuthModelImplCopyWith<_$AuthModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AuthModel&&(identical(other.phoneNumber, phoneNumber) || other.phoneNumber == phoneNumber)&&(identical(other.refreshToken, refreshToken) || other.refreshToken == refreshToken)&&(identical(other.accessToken, accessToken) || other.accessToken == accessToken)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.identified, identified) || other.identified == identified));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,phoneNumber,refreshToken,accessToken,userId,identified);
+
+@override
+String toString() {
+  return 'AuthModel(phoneNumber: $phoneNumber, refreshToken: $refreshToken, accessToken: $accessToken, userId: $userId, identified: $identified)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AuthModelCopyWith<$Res> implements $AuthModelCopyWith<$Res> {
+  factory _$AuthModelCopyWith(_AuthModel value, $Res Function(_AuthModel) _then) = __$AuthModelCopyWithImpl;
+@override @useResult
+$Res call({
+ String phoneNumber, String refreshToken, String accessToken, String userId, bool identified
+});
+
+
+
+
+}
+/// @nodoc
+class __$AuthModelCopyWithImpl<$Res>
+    implements _$AuthModelCopyWith<$Res> {
+  __$AuthModelCopyWithImpl(this._self, this._then);
+
+  final _AuthModel _self;
+  final $Res Function(_AuthModel) _then;
+
+/// Create a copy of AuthModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? phoneNumber = null,Object? refreshToken = null,Object? accessToken = null,Object? userId = null,Object? identified = null,}) {
+  return _then(_AuthModel(
+phoneNumber: null == phoneNumber ? _self.phoneNumber : phoneNumber // ignore: cast_nullable_to_non_nullable
+as String,refreshToken: null == refreshToken ? _self.refreshToken : refreshToken // ignore: cast_nullable_to_non_nullable
+as String,accessToken: null == accessToken ? _self.accessToken : accessToken // ignore: cast_nullable_to_non_nullable
+as String,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as String,identified: null == identified ? _self.identified : identified // ignore: cast_nullable_to_non_nullable
+as bool,
+  ));
+}
+
+
+}
+
+// dart format on
